@@ -17,7 +17,7 @@ $(() => {
     });
     //
     $('.shopping-list').on('click', 'li > .shopping-item-controls > button.shopping-item-toggle', function(e) {
-      $(this).closest('li').toggleClass('shopping-item__checked');
+      $(this).closest('li').children('span.shopping-item').toggleClass('shopping-item__checked');
     });
 
     $('.shopping-list').on('click', 'li > .shopping-item-controls > button.shopping-item-delete', function(e) {
